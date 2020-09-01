@@ -1,0 +1,50 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+body{
+background-color:lightgray;
+font-family: Verdana, Geneva, sans-serif;
+color: black;
+}
+main{
+margin: 0 auto;
+max-width: 60%;
+}
+h1{
+margin: 10px auto;
+color: white;
+}
+a{
+color: white;
+}
+img{
+width: 77%;
+height: auto;
+}
+.channel, .panel, form{
+display: inline-block;
+}
+.channel, form{
+background-color:darkgray;
+border-radius: 3px;
+}
+.channel{
+margin: 5px;
+text-align: center;
+}
+input[type="range"]{
+-webkit-appearance: slider-vertical;
+-moz-appearance: slider-vertical;
+display: block;
+}
+input[type="range"], button{
+margin: 8px 0;
+}
+input[type="number"]{
+width: 50px;
+}
+p, label, input[type="submit"], input[type="text"]{
+margin: 4.5px;
+}
