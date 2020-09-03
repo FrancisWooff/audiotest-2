@@ -22,25 +22,25 @@
   data-loop="1"
 />
 
-<div class=panel>
-    <div class=channel>
-        <input type="range" min="1" max="100" value="50" class="slider" id="aslid">
+<div class="panel">
+    <div class="channel">
+        <input type="range" min="1" max="100" value="50" id="aslid" orient="vertical">
         <button id="abut">A</button>
     </div>
-    <div class=channel>
-        <input type="range" min="1" max="100" value="50" class="slider" id="bslid">
+    <div class="channel">
+        <input type="range" min="1" max="100" value="50" id="bslid" orient="vertical">
         <button id="bbut">B</button>
     </div>
-    <div class=channel>
-        <input type="range" min="1" max="100" value="50" class="slider" id="cslid">
+    <div class="channel">
+        <input type="range" min="1" max="100" value="50" id="cslid" orient="vertical">
         <button id="cbut">C</button>
     </div>
 </div>
 
 <form action="results2mail.php" method="post">
-    <p>Hi there username it's</p>
+    <p>Hi there <!--you could insert your name--> it's</p>
     <input type="text" name="name"><label>(full name)</label>
-    <p>Here are my results for page 1:</p> 
+    <p>Here are my results</p> 
     <label>Slider A </label><input id="la" type="number" name="ares"><br>
     <label>Slider B </label><input id="lb" type="number" name="bres"><br>
     <label>Slider C </label><input id="lc" type="number" name="cres"><br>
