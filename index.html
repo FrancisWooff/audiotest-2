@@ -23,29 +23,29 @@
   data-loop="1"
 />
 </div>
-  
+
 <div class="panel">
     <div class="channel">
-        <input type="range" min="1" max="100" value="50" id="aslid" orient="vertical">
-        <button id="abut">A</button>
+        <input type="range" min="1" max="100" value="50" orient="vertical">
+        <button>1</button>
     </div>
     <div class="channel">
-        <input type="range" min="1" max="100" value="50" id="bslid" orient="vertical">
-        <button id="bbut">B</button>
+        <input type="range" min="1" max="100" value="50" orient="vertical">
+        <button>2</button>
     </div>
     <div class="channel">
-        <input type="range" min="1" max="100" value="50" id="cslid" orient="vertical">
-        <button id="cbut">C</button>
+        <input type="range" min="1" max="100" value="50" orient="vertical">
+        <button>3</button>
     </div>
 </div>
 
 <form action="results2mail.php" method="post">
     <p>Hi there <!--you could insert your name--> it's</p>
     <input type="text" name="name"><label>(full name)</label>
-    <p>Here are my results</p> 
-    <label>Slider A </label><input id="la" type="number" name="ares"><br>
-    <label>Slider B </label><input id="lb" type="number" name="bres"><br>
-    <label>Slider C </label><input id="lc" type="number" name="cres"><br>
+    <p>Here are my results for page 1:</p> 
+    <label>Slider 1 </label><input type="number" name="ares"><br>
+    <label>Slider 2 </label><input type="number" name="bres"><br>
+    <label>Slider 3 </label><input type="number" name="cres"><br>
     <input type="submit" value="Submit">
 </form>
 
