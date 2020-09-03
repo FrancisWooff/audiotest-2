@@ -22,12 +22,18 @@ color:white
 a{
 color:white
 }
+.leftvid{
+width:500px
+}
 img{
-width:60%;
+width:100%;
 height:auto
 }
 .channel, .panel, form{
 display:inline-block
+}
+.panel, form{
+margin-top:1rem
 }
 .channel, form{
 background-color:darkgray;
