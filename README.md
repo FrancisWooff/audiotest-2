@@ -25,7 +25,7 @@ The following item is the only remaining item of a number of planned improvement
 
 Further developments & other branches of this project.
 This repository now has 3 branches:
-1. "Self-hosted-video" is an updated version of the original "audiotest" repository. It is not recommended to use this unless you need a version without an embedded player due to poor browser support (see the readme for the branch).
-2. The main branch is the version in use by most students using this project.
+1. "V1-self-hosted-video" is an updated version of the original "audiotest" repository. It is not recommended to use this unless you need a version without an embedded player due to poor browser support (see the readme for the branch).
+2. The main branch is the (V2) version in use by most students using this project.
 3. "V3" is a new development branch for a version relying more on PHP, requiring less duplicate pages & sending results out from all pages in a single e-mail. This is likely to be ready in Oct 2020.
 After the "V3" above a version 4 with similar functionality, but built using node.js is planned.
