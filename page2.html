@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Audio test template</title>
+<title>Audio test P2</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="audtest.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
 <main>
-<h1>Audio test template</h1>
+<h1>Audio test template page 2</h1>
 
 <div class="leftvid">
 <img
@@ -27,29 +27,29 @@
 <div class="panel">
     <div class="channel">
         <input type="range" min="1" max="100" value="50" orient="vertical">
-        <button>1</button>
+        <button>A</button>
     </div>
     <div class="channel">
         <input type="range" min="1" max="100" value="50" orient="vertical">
-        <button>2</button>
+        <button>B</button>
     </div>
     <div class="channel">
         <input type="range" min="1" max="100" value="50" orient="vertical">
-        <button>3</button>
+        <button>C</button>
     </div>
 </div>
 <!--
-For each additional channel needed copy one of the "channel" divs above (5 lines beginning "<div class="channel) & paste it below the 3 already in place. Edit the number(s) in between the button tag(s).
-Then perform similar with label+input element pairs in the form below (you will need to increment the "name" as well as the slider number).
+For each additional channel needed copy one of the "channel" divs above (4 lines beginning "<div class="channel) & paste it below the 3 already in place. Edit the identifying letter(s) in between the <button> tag(s).
+Then perform similar with label+input element pairs in the form below (you will need to increment the "name" as well as the slider letter).
 Then make appropriate matching changes to the relevant php page.
 -->
 <form action="results2mail2.php" method="post">
     <p>Hi there <!--you could insert your name--> it's</p>
     <input type="text" name="name"><label>(full name)</label>
     <p>Here are my results:</p> 
-    <label>Slider 1 </label><input type="number" name="ares"><br>
-    <label>Slider 2 </label><input type="number" name="bres"><br>
-    <label>Slider 3 </label><input type="number" name="cres"><br>
+    <label>Slider A </label><input type="number" name="ares"><br>
+    <label>Slider B </label><input type="number" name="bres"><br>
+    <label>Slider C </label><input type="number" name="cres"><br>
     <input type="submit" value="Submit">
 </form>
 
