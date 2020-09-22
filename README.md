@@ -1,15 +1,13 @@
-# audiotest-2
+# audiotest
 Template for School of Science, Engineering & the Environment students at the University of Salford to adapt to host comparative audio tests online.
-
-latest update 22/9/20 8:50
+THIS VERSION IS NOW LARGELY DEPRECIATED. The main branch of this repository uses an embedded video player to solve issues with poor browser support of switching audio tracks during playback of the html video element. Only use this version (which does this) if you wish to avoid use of the embedded Vidyard player in the main branch. At last test this version works on Safari & Edge (84). It does not currently work in Chrome without specific developer flags enabled. The .mov video codec used here does not work for Firefox, an .mp4 video would show, but it has not yet been tested if audio track switching will work with his codec.
+latest update 22/9/20 9:50
 
 To use this template the following additional actions are required as a minimum:
 
-1. An account with Vidyard https://www.vidyard.com to which to upload your video file or files with multiple audio tracks.
-2. Follow Vidyard support documentation at https://knowledge.vidyard.com/hc/en-us/articles/360010001713-Embed-your-video-on-a-webpage on enabling embed for the videos you’ve uploaded. Note that a maximum of 5 videos can be enabled for embed on a free Vidyard account. You should choose the “inline” embed option.
-3. You will need to edit each page of html (one per test page, see point 6 below) to replace the code there currently (which references a short test video with Vidyard) to the code copied in step 2 above.
-4. When the php file(s - one per test page, see point 6 below) are performing their function they e-mail test results to an address “hard written” into the code of the files. Currently placeholder address "you@edu.salford.ac.uk" is used, this will need to be edited to the test owner's e-mail address.
-5. The php file(s) need to be hosted on a machine running PHP (e.g. a web server) to perform their function. You could test and develop the function of the html, css & js files hosting these locally, but the functionality that follows pressing “Submit” on the html page(s) will not work. See University Service Portal Knowledge article https://salfordprod.service-now.com/sp?id=search&q=KB0010645 for information on University provided hosting accounts.
+1. A video file with multiple audio tracks to switch between should accompany the other files (html, css, js & php) in the directory. The video file referenced in the html files currently is “output2.mov”, this reference will need to be edited to match the video file you are using. If using a different video codec it may also be necessary to amend "type="video/quicktime"" as appropriate.
+2. When the php file(s - one per test page, see point 6 below) are performing their function they e-mail test results to an address “hard written” into the code of the files. Currently placeholder address "you@edu.salford.ac.uk" is used, this will need to be edited to the test owner's e-mail address.
+3. The php file(s) need to be hosted on a machine running PHP (e.g. a web server) to perform their function. You could test and develop the function of the html, css & js files hosting these locally, but the functionality that follows pressing “Submit” on the html page(s) will not work. See University Service Portal Knowledge article https://salfordprod.service-now.com/sp?id=search&q=KB0010645 for information on University provided hosting accounts.
 
 The following further steps may be needed to adapt the project for your use:
 
@@ -19,13 +17,3 @@ The following further steps may be needed to adapt the project for your use:
 - Editing the php file(s) to receive a greater number of inputs from the html form & mail these.
 - It is no longer necessary to edit the .js file (or the .css file, unless you wish to change the look of your test)
 8. Consideration should be given to GDPR regulation, despite the very small amount of data being collected (name of subject) in running the test. You might consider removing the text input field for name from the test to anonymise it, removing personal data from the test, but as the page will be hosted on the net & searchable & accessible to anyone this runs the risk of random & possibly unreliable results.
-
-The following item is the only remaining item of a number of planned improvements for this project (others having been developed & incorporated)
-12. Randomisation of the placement of audio tracks to "a", "b" etc. faders/buttons (with a key in results mail to show how tracks were placed against "a", "b" etc.). This may be delivered initially as part of this branch or of new "V3" branch described below.
-
-Further developments & other branches of this project.
-This repository now has 3 branches:
-1. "Self-hosted-video" is an updated version of the original "audiotest" repository. It is not recommended to use this unless you need a version without an embedded player due to poor browser support (see the readme for the branch).
-2. The main branch is the version in use by most students using this project.
-3. "V3" is a new development branch for a version relying more on PHP, requiring less duplicate pages & sending results out from all pages in a single e-mail. This is likely to be ready in Oct 2020.
-After the "V3" above a version 4 with similar functionality, but built using node.js is planned.
