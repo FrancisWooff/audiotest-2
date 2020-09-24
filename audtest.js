@@ -9,14 +9,14 @@ function prsd(item, index) {
     var x = index;
 
     item.addEventListener("click",function(){
-    
     var i;
+
     for (i = 0; i < but.length; i++){
-    but[i].style.border = "none";
+    but[i].style.backgroundColor = "lightgray";
     trx[i].enabled = false;
     }
     
-    but[x].style.border = "2px solid red";
+    but[x].style.backgroundColor = "green";
     trx[x].enabled = true;
     })
 }
