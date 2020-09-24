@@ -1,5 +1,8 @@
 var but = document.querySelectorAll("button");
 var vid = document.querySelector("video");
+var trx = vid.audioTracks;
+console.log(vid);
+console.log(trx);
 
 but.forEach(prsd);
 function prsd(item, index) {
@@ -10,11 +13,11 @@ function prsd(item, index) {
     var i;
     for (i = 0; i < but.length; i++){
     but[i].style.border = "none";
-    vid.audioTracks[i].enabled = false;
+    trx[i].enabled = false;
     }
     
     but[x].style.border = "2px solid red";
-    vid.audioTracks[x].enabled = true;
+    trx[x].enabled = true;
     })
 }
 
