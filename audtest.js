@@ -3,10 +3,18 @@ var vid = document.querySelector("video");
 
 but.forEach(prsd);
 function prsd(item, index) {
+    var x = index;
+
     item.addEventListener("click",function(){
-    var i = index;
-    vid.audioTracks[i].enabled = true;
-    vid.audioTracks[!i].enabled = false;
+    
+    var i;
+    for (i = 0; i < but.length; i++){
+    but[i].style.border = "none";
+    vid.audioTracks[i].enabled = false;
+    }
+    
+    but[x].style.border = "2px solid red";
+    vid.audioTracks[x].enabled = true;
     })
 }
 
