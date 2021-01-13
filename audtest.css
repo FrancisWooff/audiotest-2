@@ -7,7 +7,7 @@ html{
 font-size:100%
 }
 body{
-background-color:lightgray;
+background-color:#c8c8ca;
 font-family:Verdana,Geneva,sans-serif;
 color:black
 }
@@ -57,4 +57,8 @@ width:3rem
 }
 p, label, input[type="submit"], input[type="text"]{
 margin:0.28rem
+}
+footer{
+margin-top:1rem;
+font-size:0.8rem
 }
