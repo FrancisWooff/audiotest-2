@@ -1,5 +1,5 @@
 # audiotest-2
-Template for School of Science, Engineering & the Environment students at the University of Salford to adapt to host comparative audio tests online.
+(superseded) template to support students of the University of Salford in hosting comparative audio tests online. Please see newer versions (v3 current at 10/3/21) on my page as more likely to support your use
 
 latest update 22/9/20 8:50
 
